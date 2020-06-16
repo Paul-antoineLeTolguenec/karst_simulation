@@ -6,6 +6,7 @@ Within the framework of the Karstic exploration project undertaken by LIRMM, it 
 This github deposit allows the simulation of an automnome robot evolving from a Karst.
 I used the gazebo simulator because it allows to be interfaced with ROS which is a tool widely used in robotics.
 This simulation was possible thanks to the work of:
+<blockquote><p>
 @inproceedings{Manhaes_2016,
     doi = {10.1109/oceans.2016.7761080},
     url = {https://doi.org/10.1109%2Foceans.2016.7761080},
@@ -16,3 +17,4 @@ This simulation was possible thanks to the work of:
     title = {{UUV} Simulator: A Gazebo-based package for underwater intervention and multi-robot simulation},
     booktitle = {{OCEANS} 2016 {MTS}/{IEEE} Monterey}
 }
+</p></blockquote>
