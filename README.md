@@ -23,3 +23,9 @@ This simulation was possible thanks to the work of:
 All the physics and visuals run essentially on gazebo
 
 [![video](https://github.com/Paul-antoineLeTolguenec/karst_simulation/blob/master/doc/video/simu_gazebo.gif)]
+
+## RVIZ
+RVIZ allows the display of the trajectory, the odometry, the camera view and even the mapping made thanks to sonars.
+It is a very powerful tool for all visualization of sensor data.
+
+[![video](https://github.com/Paul-antoineLeTolguenec/karst_simulation/blob/master/doc/video/simu_RVIZ.gif)]
