@@ -1,0 +1,97 @@
+inertial_frame_id: world
+waypoints:
+  -
+    point: [33, 66,-15]
+    max_forward_speed: 0.4
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [27.5, 35, -21.5]
+    max_forward_speed: 0.4
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [30, 18, -22.5]
+    max_forward_speed: 0.4
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [34, 9, -24.5]
+    max_forward_speed: 0.8
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [44.5, -13, -25.5]
+    max_forward_speed: 0.8
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [46.5, -27, -27.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [45.5, -37, -32.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [42.5, -41, -39.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [37.5, -44, -43.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [30.5, -49, -48.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [17.5, -53, -50.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [5.5, -56, -44.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [-8.5, -56, -29.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [-24.5, -58, -23.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [-38.5, -64, -27.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [-64.5, -78, -42.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [-74.5, -88, -48.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [-90.5, -107, -56.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False
+  -
+    point: [-98.5, -93, -56.5]
+    max_forward_speed: 1
+    heading: 0
+    use_fixed_heading: False

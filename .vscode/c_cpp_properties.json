@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/paul-antoine/workspaceRos/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/paul-antoine/workspaceRos/src/karst_simulation/include/**",
+                "/home/paul-antoine/workspaceRos/src/tp1/include/**",
+                "/home/paul-antoine/workspaceRos/src/tp2/include/**",
+                "/home/paul-antoine/workspaceRos/src/tp3/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}
