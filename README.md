@@ -29,3 +29,31 @@ RVIZ allows the display of the trajectory, the odometry, the camera view and eve
 It is a very powerful tool for all visualization of sensor data.
 
 [![video](https://github.com/Paul-antoineLeTolguenec/karst_simulation/blob/master/doc/video/simu_RVIZ.gif)]
+
+## Dependencies
+
+* **ROS Melodic** 
+  
+    First you need to install ROS (I use ROS Melodic but you can install the version you want).
+
+    you can follow the instructions [here](http://wiki.ros.org/melodic/Installation/Ubuntu)
+
+* **WorkspaceRos** 
+  
+    here is a procedure to configure your ROS workspace:
+
+        mkdir -p ~/workspaceRos/src
+        cd ~/workspaceRos
+        catkin_make
+        echo "source ~/workspaceRos/devel/setup.bash" >> ~/.bashrc
+
+* **UUV Simulator** 
+
+    Now we can install the package allowing the simulation of underwater robots:
+
+        sudo apt install ros-melodic-uuv-simulator
+
+    Or if you prefer : [Installation from source](https://uuvsimulator.github.io/installation/)
+
+* **The Karst** 
+
