@@ -21,4 +21,5 @@ This simulation was possible thanks to the work of:
 
 ## Gazebo 
 All the physics and visuals run essentially on gazebo
-[![video](https://github.com/Paul-antoineLeTolguenec/karst_simulation/blob/master/doc/video/simu_gazebo.gif)
+
+[![video](https://github.com/Paul-antoineLeTolguenec/karst_simulation/blob/master/doc/video/simu_gazebo.gif)]
