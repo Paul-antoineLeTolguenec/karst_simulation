@@ -2,8 +2,8 @@
 Modeling of an exploration robot evolving in a karst
 
 ## Introduction
-Within the framework of the Karstic exploration project undertaken by LIRMM, it was necessary to set up a simulation to test a new SLAM method: Interval analysis.
-This github deposit allows the simulation of an automnome robot evolving in a Karst.
+Within the project of the Karstic exploration undertaken by LIRMM, it was necessary to set up a simulation to test a new SLAM method using Interval analysis.
+This github repository allows the simulation of an automnome robot evolving in a Karst.
 I used the gazebo simulator because it allows to be interfaced with ROS which is a tool widely used in robotics.
 This simulation was possible thanks to the work of:
 <blockquote><p>
@@ -30,11 +30,18 @@ It is a very powerful tool for all visualization of sensor data.
 
 [![video](https://github.com/Paul-antoineLeTolguenec/karst_simulation/blob/master/doc/video/simu_RVIZ.gif)]
 
+
+## Note
+In this Markdown, I explain the installation of each element in an exhaustive way because this repository is created in order to bring together people with different backgrounds around the same formalism.
+If you have bases in ROS and Gazebo, install this package the way you want.
+
 ## Dependencies
 
 * **ROS Melodic** 
   
     First you need to install ROS (I use ROS Melodic but you can install the version you want).
+
+    You need to get ”Desktop-Full Install" so you get Gazebo.
 
     you can follow the instructions [here](http://wiki.ros.org/melodic/Installation/Ubuntu)
 
@@ -56,4 +63,30 @@ It is a very powerful tool for all visualization of sensor data.
     Or if you prefer : [Installation from source](https://uuvsimulator.github.io/installation/)
 
 * **The Karst** 
+
+    The package developed by the research team is very powerful because it has many features.
+    One of them is that you can create your own world, so that you can model it as closely as possible to your own experience.
+    I made my own world in order to recreate a karst.
+
+    To download it you need to go [there](https://github.com/Paul-antoineLeTolguenec/uuv_cave_world) 
+
+* **The Simulation with the autonomous robot**
+
+    To make the robot autonomous I had to edit the file: waypoints.yaml.
+    Indeed, this file contains different points contained in the cave and the robot follows these points in the order written in the file. So if you create a new cave you'll have to redo a waypoint file.
+
+    To get the simulation go to the terminal and run :
+
+        cd ~/workspaceRos/src
+        git clone https://github.com/Paul-antoineLeTolguenec/karst_simulation.git
+        cd ~/workspaceRos
+        catkin_make
+
+## Run the simulation
+Now that you have all the necessary elements for the simulation, you can run it.
+Go to the terminal and run :
+
+        roslaunch karst_simulation simulation.launch
+
+
 
