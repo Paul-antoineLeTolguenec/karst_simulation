@@ -3,7 +3,8 @@ project(karst_simulation)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
-
+set(CMAKE_CXX_STANDARD 11)
+add_compile_options(-O3 -DNDEBUG) # comment for debug mode
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -11,6 +12,9 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   message_generation
   message_runtime
+  sensor_msgs
+  nav_msgs
+  uuv_sensor_ros_plugins_msgs
   roscpp
   rospy
   std_msgs
@@ -112,6 +116,11 @@ catkin_package(
 #  CATKIN_DEPENDS geometry_msgs message_generation message_runtime roscpp rospy std_msgs tf
 #  DEPENDS system_lib
 )
+############################TUBEX#######################################
+include(FindPkgConfig)
+pkg_search_module(TUBEX REQUIRED tubex)
+message(STATUS "Found Tubex version ${TUBEX_VERSION}")
+
 
 ###########
 ## Build ##
@@ -138,6 +147,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/karst_simulation_node.cpp)
+add_executable(IA_node src/IA_node.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -145,14 +155,23 @@ include_directories(
 ## e.g. "rosrun someones_pkg node" instead of "rosrun someones_pkg someones_pkg_node"
 # set_target_properties(${PROJECT_NAME}_node PROPERTIES OUTPUT_NAME node PREFIX "")
 
+
+#########################TUBEX#####################################
+target_compile_options(IA_node PUBLIC ${TUBEX_CFLAGS})
+target_include_directories(IA_node PUBLIC ${TUBEX_INCLUDE_DIRS})
+target_link_libraries(IA_node ${catkin_LIBRARIES} ${TUBEX_LDFLAGS})
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(IA_node  ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
+
+
+
 
 #############
 ## Install ##
