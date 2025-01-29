@@ -5,19 +5,7 @@ Modeling of an exploration robot evolving in a karst
 Within the project of the Karstic exploration undertaken by LIRMM, it was necessary to set up a simulation to test a new SLAM method using Interval analysis.
 This github repository allows the simulation of an automnome robot evolving in a Karst.
 I used the gazebo simulator because it allows to be interfaced with ROS which is a tool widely used in robotics.
-This simulation was possible thanks to the work of:
-<blockquote><p>
-@inproceedings{Manhaes_2016,
-    doi = {10.1109/oceans.2016.7761080},
-    url = {https://doi.org/10.1109%2Foceans.2016.7761080},
-    year = 2016,
-    month = {sep},
-    publisher = {{IEEE}},
-    author = {Musa Morena Marcusso Manh{\~{a}}es and Sebastian A. Scherer and Martin Voss and Luiz Ricardo Douat and Thomas Rauschenbach},
-    title = {{UUV} Simulator: A Gazebo-based package for underwater intervention and multi-robot simulation},
-    booktitle = {{OCEANS} 2016 {MTS}/{IEEE} Monterey}
-}
-</p></blockquote>
+This simulation was possible thanks to the work of [@Manhaes_2016].
 
 ## Gazebo 
 All the physics and visuals run essentially on gazebo
